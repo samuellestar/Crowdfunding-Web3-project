@@ -32,5 +32,6 @@ Open [http://localhost:5173]([http://localhost:5173]) to view it in the browser.
 Clear the files in smart_comtract files and run 
 
 ```bash
-hardhat init
+cd web3
+npm run deploy
 ```
