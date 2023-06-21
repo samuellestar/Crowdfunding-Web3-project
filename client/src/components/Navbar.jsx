@@ -22,23 +22,47 @@ const Navbar = () => {
         </div> */}
       {/* </div> */}
 
-      <div className="sm:flex hidden flex-row justify-end gap-4">
+      <div className="bg-[#1dc071] sm:flex hidden flex-row justify-end gap-4 hover:bg-[#2546bd] font-epilogue font-semibold text-[16px] leading-[26px] text-white min-h-[52px] px-4 rounded-[10px]">
         <CustomButton 
           btnType="button"
           title={address ? 'Create a campaign' : 'Connect'}
-          styles={address ? 'bg-[#1dc071]' : 'bg-[#8c6dfd]'}
+          // styles={address ? 'bg-[#1dc071]' : 'bg-[#8c6dfd]'}
           handleClick={() => {
             if(address) navigate('create-campaign')
             else connect()
           }}
         />
 
-        <Link to="/profile">
+        {/* <Link to="/profile">
           <div className="w-[52px] h-[52px] rounded-full bg-[#2c2f32] flex justify-center items-center cursor-pointer">
             <img src={thirdweb} alt="user" className="w-[60%] h-[60%] object-contain" />
           </div>
-        </Link>
+        </Link> */}
+        
       </div>
+
+      <div className="bg-[#1dc071] sm:flex hidden flex-row justify-end gap-5 hover:bg-[#2546bd] font-epilogue font-semibold text-[16px] leading-[26px] text-white min-h-[52px] px-4 rounded-[10px]">
+      <a href="http://localhost:3000/">
+        <CustomButton 
+          btnType="button"
+          title={address ? 'Xie-Fi' : 'Connect'}
+          // styles={address ? 'bg-[#1dc071]' : 'bg-[#8c6dfd]'}
+          // handleClick={() => {
+          //   if(address) navigate('http://localhost:3000/')
+          //   else connect()
+          // }}
+        />
+        </a>
+      </div>
+
+
+      <div className="sm:flex hidden flex-row justify-end gap-3">
+      
+      </div>
+
+      
+
+
 
       {/* Small screen navigation */}
         <div className="sm:hidden flex justify-between items-center relative">
