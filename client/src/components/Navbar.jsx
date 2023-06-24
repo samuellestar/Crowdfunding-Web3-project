@@ -45,7 +45,7 @@ const Navbar = () => {
       <a href="http://localhost:3000/">
         <CustomButton 
           btnType="button"
-          title={address ? 'Xie-Fi' : 'Connect'}
+          title={address ? 'Xie-Fi' : 'Xie-Fi'}
           // styles={address ? 'bg-[#1dc071]' : 'bg-[#8c6dfd]'}
           // handleClick={() => {
           //   if(address) navigate('http://localhost:3000/')
